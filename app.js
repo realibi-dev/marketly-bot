@@ -260,7 +260,7 @@ async function handleTotalDailyCommand(bot, chatId, client, msg) {
   let providers = [...new Set(orderedProducts.map(op => op.provider_id))]
 
   if (!providers.length) {
-    bot.sendMessage(chatId, "На данный момент, нет подтвержденныз заказов на завтра");
+    bot.sendMessage(chatId, "На данный момент нет подтвержденных заказов на завтра");
     return;
   }
 
